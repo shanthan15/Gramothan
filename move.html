@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Information Display Bar</title>
+  <style>
+    .info-bar-container {
+      overflow: hidden;
+      width: 100%;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .info-bar {
+      display: inline-block;
+      animation: marquee 10s linear infinite;
+      color: white;
+      font-size: 18px;
+      white-space: nowrap;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="info-bar-container">
+    <div class="info-bar">
+      <p>Mockup Information 1 | Mockup Information 2 | Mockup Information 3 | Mockup Information 4 | Mockup Information 5</p>
+    </div>
+  </div>
+</body>
+</html>
